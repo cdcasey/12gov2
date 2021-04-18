@@ -1,5 +1,4 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
@@ -11,6 +10,23 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        otgogreen: {
+          light: '#b4d55f',
+          medium: '#4c9342',
+          dark: '#3f421b',
+        },
+        otgopurple: {
+          light: '#692f65',
+          dark: '#4e2688',
+        },
+        otgoorange: {
+          light: '#f9a415',
+          dark: '#f68722',
+        },
+        otgored: '#b42025',
+        otgoyellow: '#ffd744',
+        otgowhite: '#fdfdfd',
+        otgoblack: '#212121',
       },
       spacing: {
         28: '7rem',
@@ -37,4 +53,4 @@ module.exports = {
       },
     },
   },
-}
+};
