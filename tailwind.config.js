@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
@@ -42,6 +42,7 @@ module.exports = {
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
+        title: 'min(6.7vw, 144px)',
       },
       fontFamily: {
         serif: ['Lilita One', ...defaultTheme.fontFamily.serif],
@@ -53,4 +54,4 @@ module.exports = {
       },
     },
   },
-};
+}
