@@ -1,8 +1,10 @@
-import '../styles/index.css'
+import { AppProps } from 'next/app'
 import '@fontsource/cabin'
 import '@fontsource/lilita-one'
 
-function MyApp({ Component, pageProps }) {
+import 'styles/index.css'
+
+function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
