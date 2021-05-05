@@ -18,7 +18,8 @@ type IndexProps = {
 
 export default function Index({ allPosts: { edges }, preview }: IndexProps) {
   const heroPost = edges[0]?.node
-  const morePosts = edges.slice(1)
+  // const morePosts = edges.slice(1)
+  const morePosts = edges.slice(0, 12)
 
   return (
     <>
