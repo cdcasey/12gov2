@@ -42,7 +42,7 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           {postLimit >= MAX_POSTS ? (
             <button
-              className="block m-auto bg-otgopurple-dark text-otgowhite p-2 rounded bg-opacity-70 cursor-default"
+              className="block m-auto bg-otgopurple-dark text-otgowhite py-2 px-4 rounded bg-opacity-70 cursor-default"
               type="button"
               onClick={setPostNum}
               disabled
@@ -51,7 +51,7 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
             </button>
           ) : (
             <button
-              className="block m-auto bg-otgopurple-dark text-otgowhite p-2 rounded hover:text-otgoorange-light duration-200 px-4"
+              className="block m-auto bg-otgopurple-dark text-otgowhite py-2 px-4 rounded hover:text-otgoorange-light duration-200 "
               type="button"
               onClick={setPostNum}
             >
