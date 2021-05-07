@@ -1,6 +1,7 @@
 import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import Image from 'next/image'
 
 type CoverImage = {
   sourceUrl: string
@@ -16,18 +17,19 @@ type PostProps = {
 }
 
 export default function PostPreview({ title, coverImage, date, excerpt, slug }: PostProps) {
-  console.log({ coverImage })
+  // console.log({ coverImage })
 
   return (
     <div>
+      {/* <Image src={coverImage?.sourceUrl} layout="fill" objectFit="cover" /> */}
       <Link as={`/posts/${slug}`} href="/posts/[slug]">
         <div
-          className="relative cursor-pointer text-otgowhite hover:text-otgoorange-light duration-200 h-preview bg-cover"
-          style={{ backgroundImage: `url('${coverImage?.sourceUrl}')` }}
+          className="relative cursor-pointer text-otgowhite hover:text-otgoorange-light duration-200 h-preview bg-cover overflow-hidden"
+          // style={{ backgroundImage: `url('${coverImage?.sourceUrl}')` }}
         >
-          {/* <div>
-            <CoverImage title={title} coverImage={coverImage} slug={slug} />
-          </div> */}
+          {/* <div className="w-full"> */}
+          <CoverImage title={title} coverImage={coverImage} slug={slug} />
+          {/* </div> */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-otgopurple-dark bg-opacity-75 flex flex-col justify-center items-center w-full h-1/2 text-center">
             <h3 className="text-xl leading-snug">
               <a className="hover:none" dangerouslySetInnerHTML={{ __html: title }}></a>
