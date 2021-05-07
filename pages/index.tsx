@@ -38,7 +38,8 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
 // }
 
 export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
-  const allPosts = await getAllPostsForHome(preview)
+  const allPosts = await getAllPostsForHome('Episodes')
+
   return {
     props: { allPosts, preview },
   }
