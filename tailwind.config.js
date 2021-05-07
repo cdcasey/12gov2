@@ -55,6 +55,9 @@ module.exports = {
       },
       height: {
         preview: '200px',
+        cover: '200px',
+        covermd: '350px',
+        coverlg: '450px',
       },
     },
   },
