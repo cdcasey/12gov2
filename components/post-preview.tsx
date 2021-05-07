@@ -16,7 +16,7 @@ type PostProps = {
   slug: string
   excerpt: string
 }
-// TODO: Check next-image package to see if BG images get rendered statically
+
 export default function PostPreview({ title, coverImage, date, excerpt, slug }: PostProps) {
   return (
     <div>
