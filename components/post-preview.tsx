@@ -25,16 +25,18 @@ export default function PostPreview({ title, coverImage, date, excerpt, slug }: 
           className="relative cursor-pointer text-otgowhite hover:text-otgoorange-light duration-200 h-preview"
           // style={{ backgroundImage: `url('${coverImage?.sourceUrl}')` }}
         >
-          <Image
-            src={coverImage?.sourceUrl}
-            // width={477}
-            // height={200}
-            layout="fill"
-            objectFit="cover"
-            quality={10}
-            // sizes="(all) 200px"
-            aria-hidden="true"
-          />
+          {coverImage && (
+            <Image
+              src={coverImage.sourceUrl}
+              // width={477}
+              // height={200}
+              layout="fill"
+              objectFit="cover"
+              quality={10}
+              // sizes="(all) 200px"
+              aria-hidden="true"
+            />
+          )}
 
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-otgopurple-dark bg-opacity-75 flex flex-col justify-center items-center w-full h-1/2 text-center">
             <h3 className="text-xl leading-snug">
