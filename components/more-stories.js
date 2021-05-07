@@ -6,7 +6,6 @@ export default function MoreStories({ posts }) {
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:gap-x-8 gap-y-12 mb-32">
         {posts.map(({ node }) => (
           <PostPreview
-            className="w-300px"
             key={node.slug}
             title={node.title}
             coverImage={node.featuredImage?.node}
