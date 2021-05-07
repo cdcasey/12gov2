@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -52,6 +52,12 @@ module.exports = {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
         otgo: '0px 0px 100px 90px #fdfdfd',
+      },
+      height: {
+        preview: '200px',
+        cover: '200px',
+        covermd: '350px',
+        coverlg: '450px',
       },
     },
   },
