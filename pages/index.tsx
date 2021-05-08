@@ -33,7 +33,6 @@ export default function Index({ allPosts: { edges }, preview }: IndexProps) {
   const [postLimit, setPostLimit] = useState(9)
 
   const morePosts = edges.slice(0, postLimit)
-  console.log({ postLimit })
 
   return (
     <>
