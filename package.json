@@ -1,29 +1,22 @@
 {
-  "name": "cms-wordpress",
-  "version": "1.0.0",
+  "name": "12gov2",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/cabin": "^4.2.2",
-    "@fontsource/lilita-one": "^4.2.2",
-    "classnames": "2.3.1",
-    "date-fns": "2.21.1",
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "@astrojs/check": "^0.9.3",
+    "astro": "^4.14.5",
+    "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.10",
-    "postcss-flexbugs-fixes": "5.0.2",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^2.1.1",
-    "typescript": "^4.2.4"
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1"
   },
-  "license": "MIT"
+  "packageManager": "pnpm@9.4.0+sha256.b6fd0bfda555e7e584ad7e56b30c68b01d5a04f9ee93989f4b93ca8473c49c74"
 }
