@@ -1,9 +1,21 @@
-<header>
+---
+import { Image } from 'astro:assets';
+import MainHeader from '@/images/12GO_YTHeader.png';
+
+export interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<header class={className}>
   <h1>Astro Header!</h1>
+  <Image src={MainHeader} alt="a bunch of fruit" widths={[240, 540, 720, MainHeader.width]} />
 </header>
 
 <style>
   h1 {
-    @apply text-purple-400 text-xl;
+    @apply text-purple-400 text-xl text-center text-otgopurple-dark relative h-fit;
   }
 </style>
